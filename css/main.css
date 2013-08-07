@@ -3,5 +3,35 @@
  * Full Sail University
  * Course: ASD
  * Term: 1308
- * boilerplate Activity Week 1
+ * Project Week 1
  */
+
+.ui-header h2.ui-title {
+            font-size: 12px;
+    
+}
+#pageOne img {
+    width: 40%;
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+div.ui-content  {
+                font-size: 12px;
+    text-align: center;
+}
+#pageOne {
+    text-align: center;
+    background: url("../img/backgroundMIUProject4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#pageOne .ui-listview {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+    max-width: 240px;
+
+}
