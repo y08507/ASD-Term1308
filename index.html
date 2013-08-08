@@ -21,17 +21,17 @@
 
 <body>
 <section id="pageOne" data-role="page" data-theme="">
-    <div data-role="content">
+    <section data-role="content">
         <a href="#" data-transition="pop" data-ajax="false">
             <img src="img/ThinkTankResize.png" alt="View Source Logo" />
         </a>
-        <h1>Social Collaboration</h1>
+        <hgroup>
+            <h1>Social Collaboration</h1>
 
-        <h1>On A</h1>
+            <h1>On A</h1>
 
-        <h1>Global Scale</h1>
-
-
+            <h1>Global Scale</h1>
+        </hgroup>
         <ul data-role="listview" data-theme="a" data-inset="true">
             <li><a href="#addProject">Add Project or Idea</a>
             </li>
@@ -42,18 +42,17 @@
             <li><a href="#viewCompleted">View Completed</a>
             </li>
         </ul>
-    </div>
+    </section>
 </section>
 <section id="addProject" data-role="page">
     <header data-role="header" data-theme="b">
         <h1>ThinkTank</h1>
         <h2>Social Collaboration on a Global Scale</h2>
         <a href="#pageOne" data-transition="pop" data-icon="home">Home</a>
-
     </header>
-    <div data-role="content">
+    <section data-role="content">
         <form action="" id="projectData" data-theme="">
-            <div data-role="fieldcontain" class="ui-hide-label">
+            <section data-role="fieldcontain" class="ui-hide-label">
                 <label for="select-choice-a" class="select">Categories:</label>
                 <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
                     <option>Choose A Category Type:</option>
@@ -62,46 +61,45 @@
                     <option value="express">Technological Creations</option>
                     <option value="overnight">Web Development</option>
                 </select>
-            </div>
-            <div data-role="fieldcontain" class="ui-hide-label">
+            </section>
+            <section data-role="fieldcontain" class="ui-hide-label">
                 <label for="text-basic">Project or Ideas:</label>
                 <input type="text" name="text-basic" id="text-basic" value="" placeholder="Enter New Project or Idea">
-            </div>
-            <div data-role="fieldcontain" class="ui-hide-label">
+            </section>
+            <section data-role="fieldcontain" class="ui-hide-label">
                 <label for="textarea">Notes:</label>
                 <textarea cols="40" rows="8" name="textarea" id="textarea" placeholder="Enter Note on Project or Idea"></textarea>
-            </div>
-            <div data-role="fieldcontain">
+            </section>
+            <section data-role="fieldcontain">
                 <label for="date">Enter Start Date:</label>
                 <input type="date" name="date" id="date" value="">
-            </div>
-            <div data-role="fieldcontain" class="ui-hide-label">
-                <div data-role="controlgroup">
+            </section>
+            <section data-role="fieldcontain" class="ui-hide-label">
+                <section data-role="controlgroup">
                     <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
                     <label for="radio-choice-1">Globalize Project via Twitter</label>
                     <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
                     <label for="radio-choice-2">Keep it Private Lone Wolf</label>
-                </div>
-            </div>
+                </section>
+            </section>
             <input type="submit" id="submitDataForm" value="submitDataForm" data-shadow="true" data-mini="false" data-theme="b">
             <br>
             <br>
-            <div class="ui-grid-a">
-                <div class="ui-block-a" style="text-align: left"> <a href="#pageOne" id="manageErrors1" data-transition="pop">Exit Form</a>
-                </div>
-                <div class="ui-block-b" style="text-align: right"><a href="#" id="errorDialog1" data-ajax="false">Reset Form</a>
-                </div>
-            </div>
+            <section class="ui-grid-a">
+                <section class="ui-block-a" style="text-align: left"> <a href="#pageOne" id="manageErrors1" data-transition="pop">Exit Form</a>
+                </section>
+                <section class="ui-block-b" style="text-align: right"><a href="#" id="errorDialog1" data-ajax="false">Reset Form</a>
+                </section>
+            </section>
         </form>
-    </div>
+    </section>
 </section>
 <section id="viewProjects" data-role="page">
     <header data-role="header" data-theme="">
         <h1>ThinkTank</h1>
         <h2>Social Collaboration on a Global Scale</h2>
         <a href="#pageOne" data-transition="pop" data-icon="home">Home</a>
-
-        <div data-role="navbar">
+        <nav data-role="navbar">
             <ul>
                 <li><a href="#viewProjects" data-transition="flip" class="ui-btn-active ui-state-persist">Projects</a>
                 </li>
@@ -110,9 +108,9 @@
                 <li><a href="#viewCompleted" data-transition="flip">Completed</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
-    <div data-role="content">
+    <section data-role="content">
         <p>Project Data will be listed by:</p>
         <p>Category</p>
         <p>Project or Idea</p>
@@ -121,9 +119,9 @@
         <p>Globalize</p>
         <p><a href="#pageOne">Go to first page</a>
         </p>
-    </div>
-    <div data-role="footer" style="overflow:hidden;">
-        <div data-role="navbar">
+    </section>
+    <footer data-role="footer" style="overflow:hidden;">
+        <nav data-role="navbar">
             <ul>
                 <li><a href="#addProject" class="">Add</a>
                 </li>
@@ -132,16 +130,15 @@
                 <li><a href="#">Delete</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </footer>
 </section>
 <section id="viewCompleted" data-role="page">
     <header data-role="header" data-theme="">
         <h1>ThinkTank</h1>
         <h2>Social Collaboration on a Global Scale</h2>
         <a href="#pageOne" data-transition="pop" data-icon="home">Home</a>
-
-        <div data-role="navbar">
+        <nav data-role="navbar">
             <ul>
                 <li><a href="#viewProjects" data-transition="flip">Projects</a>
                 </li>
@@ -150,9 +147,9 @@
                 <li><a href="#viewCompleted" data-transition="flip" class="ui-btn-active ui-state-persist">Completed</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
-    <div data-role="content">
+    <section data-role="content">
         <p>Completed Projects or Ideas Data will be listed by:</p>
         <p>Category</p>
         <p>Project or Idea</p>
@@ -161,9 +158,9 @@
         <p>Globalize</p>
         <p><a href="#pageOne">Go to first page</a>
         </p>
-    </div>
-    <div data-role="footer" style="overflow:hidden;">
-        <div data-role="navbar">
+    </section>
+    <footer data-role="footer" style="overflow:hidden;">
+        <nav data-role="navbar">
             <ul>
                 <li><a href="#addProject" class="">Add</a>
                 </li>
@@ -172,16 +169,15 @@
                 <li><a href="#">Delete</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </footer>
 </section>
 <section id="viewIdeas" data-role="page">
     <header data-role="header" data-theme="">
         <h1>ThinkTank</h1>
         <h2>Social Collaboration on a Global Scale</h2>
         <a href="#pageOne" data-transition="pop" data-icon="home">Home</a>
-
-        <div data-role="navbar">
+        <nav data-role="navbar">
             <ul>
                 <li><a href="#viewProjects" data-transition="flip">Projects</a>
                 </li>
@@ -190,9 +186,9 @@
                 <li><a href="#viewCompleted" data-transition="flip">Completed</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
-    <div data-role="content">
+    <section data-role="content">
         <p>Ideas Data will be listed by:</p>
         <p>Category</p>
         <p>Project or Idea</p>
@@ -201,9 +197,9 @@
         <p>Globalize</p>
         <p><a href="#pageOne">Go to first page</a>
         </p>
-    </div>
-    <div data-role="footer" style="overflow:hidden;">
-        <div data-role="navbar">
+    </section>
+    <footer data-role="footer" style="overflow:hidden;">
+        <nav data-role="navbar">
             <ul>
                 <li><a href="#addProject" class="">Add</a>
                 </li>
@@ -212,8 +208,8 @@
                 <li><a href="#">Delete</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </footer>
 </section>
 <script type="text/javascript" src="js/libs/jquery-2.0.0.min.js"></script>
 <script type="text/javascript" src="js/libs/jquery.mobile-1.3.1.js"></script>
